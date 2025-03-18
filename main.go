@@ -16,6 +16,7 @@ import (
 
 	"github.com/fyne-io/demo/data"
 	"github.com/fyne-io/demo/tutorials"
+	"github.com/mbaklor/fyne-catppuccin"
 )
 
 const preferenceCurrentTutorial = "currentTutorial"
@@ -24,6 +25,8 @@ var topWindow fyne.Window
 
 func main() {
 	a := app.NewWithID("io.fyne.demo")
+	ctp := catppuccin.New()
+	a.Settings().SetTheme(ctp)
 	a.SetIcon(data.FyneLogo)
 	makeTray(a)
 	logLifecycle(a)
@@ -245,12 +248,23 @@ func makeNav(setTutorial func(tutorial tutorials.Tutorial), loadPrevious bool) f
 		tree.Select(currentPref)
 	}
 
+	ctp := catppuccin.New()
 	themes := container.NewGridWithColumns(2,
-		widget.NewButton("Dark", func() {
-			a.Settings().SetTheme(&forcedVariant{Theme: theme.DefaultTheme(), variant: theme.VariantDark})
+		widget.NewButton("Latte", func() {
+			ctp.SetFlavor(catppuccin.Latte)
+			a.Settings().SetTheme(ctp)
 		}),
-		widget.NewButton("Light", func() {
-			a.Settings().SetTheme(&forcedVariant{Theme: theme.DefaultTheme(), variant: theme.VariantLight})
+		widget.NewButton("Frappe", func() {
+			ctp.SetFlavor(catppuccin.Frappe)
+			a.Settings().SetTheme(ctp)
+		}),
+		widget.NewButton("Macchiato", func() {
+			ctp.SetFlavor(catppuccin.Macchiato)
+			a.Settings().SetTheme(ctp)
+		}),
+		widget.NewButton("Mocha", func() {
+			ctp.SetFlavor(catppuccin.Mocha)
+			a.Settings().SetTheme(ctp)
 		}),
 	)
 

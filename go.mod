@@ -4,12 +4,14 @@ go 1.19
 
 require (
 	fyne.io/fyne/v2 v2.5.5-0.20250205124147-5562f7f2dfd4
+	github.com/mbaklor/fyne-catppuccin v0.0.2
 	github.com/stretchr/testify v1.10.0
 )
 
 require (
 	fyne.io/systray v1.11.0 // indirect
 	github.com/BurntSushi/toml v1.4.0 // indirect
+	github.com/catppuccin/go v0.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fredbi/uri v1.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect

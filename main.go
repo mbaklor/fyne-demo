@@ -14,9 +14,9 @@ import (
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
 
-	"github.com/fyne-io/demo/data"
-	"github.com/fyne-io/demo/tutorials"
 	"github.com/mbaklor/fyne-catppuccin"
+	"github.com/mbaklor/fyne-demo/data"
+	"github.com/mbaklor/fyne-demo/tutorials"
 )
 
 const preferenceCurrentTutorial = "currentTutorial"

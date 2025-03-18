@@ -15,8 +15,7 @@ import (
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
-
-	"github.com/fyne-io/demo/data"
+	"github.com/mbaklor/fyne-demo/data"
 )
 
 const (

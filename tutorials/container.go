@@ -11,8 +11,7 @@ import (
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/theme"
 	"fyne.io/fyne/v2/widget"
-
-	"github.com/fyne-io/demo/data"
+	"github.com/mbaklor/fyne-demo/data"
 )
 
 // containerScreen loads a tab panel for containers

@@ -1,4 +1,4 @@
-module github.com/fyne-io/demo
+module github.com/mbaklor/fyne-demo
 
 go 1.19
 
